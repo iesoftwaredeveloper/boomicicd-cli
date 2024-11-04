@@ -94,7 +94,7 @@ function usage {
 # Create JSON file with inputs from template
 function createJSON {
 	# Iteratively create a query string to replace the variables in the JSON File
-  if [ null == "${ARGUMENTS}"	] || [ -z "${ARGUMENTS}" ]
+  if [ null == "${ARGUMENTS}" ] || [ -z "${ARGUMENTS}" ]
 	then 
 		cp $JSON_FILE "${WORKSPACE}"/tmp.json
   else
